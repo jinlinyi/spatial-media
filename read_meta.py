@@ -69,7 +69,9 @@ def main():
   content_idx = []
   print_layer(mpeg4_file.moov_box)
   layer = seek_layer(mpeg4_file.moov_box, hierarchy, depth=0)
+  mpeg4_file.print_structure()
   breakpoint()
+
 
 
   return
